@@ -1,61 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Lora", Georgia, serif;
-  --color-neutral-955: #0a0a0a;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-hand: "Architects Daughter", cursive, sans-serif;
+  --font-caveat: "Caveat", cursive, sans-serif;
+  --font-typewriter: "Courier Prime", monospace;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
-/* 1. LIME GREEN PADEL THEME OVERRIDES */
-[data-theme="lime"] {
-  --color-neutral-50: #f7fee7; /* lime-50 */
-  --color-neutral-100: #ecfccb; /* lime-100 */
-  --color-neutral-150: #e2f9b8;
-  --color-neutral-200: #d9f99d; /* lime-200 */
-  --color-neutral-250: #c5f27b;
-  --color-neutral-300: #bef264; /* lime-300 */
-  --color-neutral-400: #a3e635; /* lime-400 */
-  --color-neutral-450: #84cc16; /* lime-500 */
-  --color-neutral-500: #65a30d; /* lime-600 */
-  --color-neutral-800: #3f6212; /* lime-800 */
-  --color-neutral-900: #365314; /* lime-900 */
-  --color-neutral-950: #1a2e05; /* lime-955 / lime-950 */
-  --color-neutral-955: #1a2e05;
-
-  /* Overrides for any slate-based colors used */
-  --color-slate-50: #f7fee7;
-  --color-slate-100: #ecfccb;
-  --color-slate-200: #d9f99d;
-  --color-slate-500: #65a30d;
-  --color-slate-900: #1a2e05;
+/* Notebook paper patterns */
+.pattern-lined {
+  background-color: #ffffff;
+  background-image: linear-gradient(#e0f2fe 1px, transparent 1px);
+  background-size: 100% 2rem;
+  line-height: 2rem;
 }
 
-/* 2. CLAY ORANGE PADEL THEME OVERRIDES */
-[data-theme="orange"] {
-  --color-neutral-50: #fff7ed; /* orange-50 */
-  --color-neutral-100: #ffedd5; /* orange-100 */
-  --color-neutral-150: #ffd8a8;
-  --color-neutral-200: #fed7aa; /* orange-200 */
-  --color-neutral-250: #fbc285;
-  --color-neutral-300: #fdbb2d; /* earthy light style border */
-  --color-neutral-400: #ff9d42;
-  --color-neutral-450: #f97316; /* orange-500 */
-  --color-neutral-500: #ea580c; /* orange-600 */
-  --color-neutral-800: #9a3412; /* orange-800 */
-  --color-neutral-900: #7c2d12; /* orange-900 */
-  --color-neutral-950: #431407; /* orange-955 / orange-950 (clay dark) */
-  --color-neutral-955: #431407;
-
-  /* Overrides for any slate-based colors used */
-  --color-slate-50: #fff7ed;
-  --color-slate-100: #ffedd5;
-  --color-slate-200: #fed7aa;
-  --color-slate-500: #ea580c;
-  --color-slate-900: #431407;
+.pattern-grid {
+  background-color: #fafafa;
+  background-image: 
+    linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+    linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+  background-size: 1.5rem 1.5rem;
 }
 
-/* Base custom styles to support the dynamic theme ring and selection colors */
-selection {
-  background-color: var(--color-neutral-950);
-  color: #ffffff;
+.pattern-yellow {
+  background-color: #fefce8; /* Soft yellow legal pad */
+  background-image: linear-gradient(#fde047 1px, transparent 1px);
+  background-size: 100% 2.25rem;
+  line-height: 2.25rem;
 }
+
+.pattern-kraft {
+  background-color: #f5efe6; /* Cardboard/Kraft warm page */
+  background-image: radial-gradient(#d5c3aa 1px, transparent 1px);
+  background-size: 1.5rem 1.5rem;
+}
+
+/* Soft transition for theme switching */
+.theme-transition {
+  transition: background-color 0.4s ease, color 0.3s ease, background-image 0.4s ease;
+}
+
+/* Custom scrollbar for notebook vibe */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+

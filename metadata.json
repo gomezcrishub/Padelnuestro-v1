@@ -1,6 +1,6 @@
 {
-  "name": "PADELNUESTRO",
-  "description": "Gestión Integral de Ranking y Torneos.",
+  "name": "Torneos de Padel",
+  "description": "Aplicación para la creación y gestión de torneos de pádel con estilo de block de notas minimalista.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
