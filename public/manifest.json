@@ -1,0 +1,24 @@
+{
+  "short_name": "Torneos Padel",
+  "name": "Torneos Padel",
+  "description": "Gestión y visualización de resultados de torneos de pádel",
+  "icons": [
+    {
+      "src": "/padel_pwa_icon.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/padel_pwa_icon.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1c1917",
+  "theme_color": "#1c1917",
+  "display": "standalone",
+  "orientation": "portrait"
+}
