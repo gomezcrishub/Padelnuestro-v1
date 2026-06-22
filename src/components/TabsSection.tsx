@@ -1136,6 +1136,18 @@ export const TabsSection: React.FC<TabsSectionProps> = ({
           set3
         ]);
       }
+    } else {
+      // Si los playoffs se arman desde cuartos (o no está configurado octavos), igualmente se exportan las 8 filas de octavos con "sin partido"
+      for (let i = 1; i <= 8; i++) {
+        rows.push([
+          `Octavos${i}`,
+          "sin partido",
+          "sin partido",
+          "",
+          "",
+          ""
+        ]);
+      }
     }
 
     // Cuartos
